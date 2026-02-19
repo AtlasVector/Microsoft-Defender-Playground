@@ -15,8 +15,9 @@ It’s designed to answer:
 ## **Windows failed logons (4625)**
 This section focuses on high volume failed logons and the biggest targets
 
-<img src="Microsoft-Defender/resources/Auth-Dash.png" alt="Auth Abuse Hunting Dashboard" />
+<img src="resources/Auth-Dash.png" alt="Windows failed logons" />
 
+---
 ### **Failed Logons - KQL Query**
 ```KQL
 SecurityEvent_CL 
@@ -31,7 +32,7 @@ While digging into workbook structure, I noticed parameters can do more than jus
 
 <img src="/Microsoft-Defender/resources/parameters_use.png" />
 
-![[parameters_use.png]]
+<img src="/images/GSC-Cer.png" width="80" alt="Google Cybersecurity Professional Certificate" />![[parameters_use.png]]
 #### **Highest Targeted Hosts  & Accounts   **
 
 <img src="/resources/parameter_scr.png">
