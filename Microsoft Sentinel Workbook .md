@@ -29,15 +29,15 @@ While digging into workbook structure, I noticed parameters can do more than jus
 <img src="Resources/parameters_use.png" alt="Parameters use" />
 #### **Highest Targeted Hosts  & Accounts** 
 <img src="Resources/parameter_scr.png" alt="Parameters" />
-##### Hosts - `TopComputer`
-```KQL
+##### Hosts - TopComputer
+KQL
 SecurityEvent_CL
 	| where TimeGenerated > ago(7d)
 	| where EventID_s == "4625"
 	| summarize Failed = count() by Computer
 	| top 1 by Failed desc
 	| project Computer
-```
+
 ##### Accounts `TopAccount`
 ```KQL
 SecurityEvent_CL
