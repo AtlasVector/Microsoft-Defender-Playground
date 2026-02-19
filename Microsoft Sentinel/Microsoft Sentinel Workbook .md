@@ -14,7 +14,8 @@ It’s designed to answer:
 - Are failures concentrated on specific users, systems, or apps?
 ## **Windows failed logons (4625)**
 This section focuses on high volume failed logons and the biggest targets.
-![[GitHub-Public/Microsoft-Defender-Playground/Resources/Auth-Dash.png]]
+<img src="/resources/Auth-Dash.png" />
+
 ### **Failed Logons - KQL Query**
 ```KQL
 SecurityEvent_CL 
@@ -27,11 +28,11 @@ SecurityEvent_CL
 ### **Parameters**
 While digging into workbook structure, I noticed parameters can do more than just filter charts, so I decided to try them here as a simple highlight to mix dynamic variable with human readable text 
 
+<img src="/resources/parameters_use.png" />
 ![[parameters_use.png]]
 #### **Highest Targeted Hosts  & Accounts   **
 
-![[parameter_scr.png]]
-
+<img src="/resources/parameter_scr.png">
 ##### Hosts - `TopComputer`
 ```KQL
 SecurityEvent_CL
@@ -54,7 +55,7 @@ SecurityEvent_CL
 ## Entra ID Sign-ins
 The goal is to quickly spot identities under the most sign in pressure, see whether failures are isolated or spread across multiple apps, and understand what’s driving the activity so I can separate expected behavior from suspicious patterns.
 
-![[Signin-LogsV1.png]]
+<img src="/resources/Signin-LogsV1.png">
 
 This part of the dashboards includes: 
 - Per user u (failed / success / total) to identify high failure accounts fast.
