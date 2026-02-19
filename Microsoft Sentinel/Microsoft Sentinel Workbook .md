@@ -16,6 +16,7 @@ It’s designed to answer:
 This section focuses on high volume failed logons and the biggest targets
 
 <img src="Microsoft-Defender/resources/Auth-Dash.png" alt="Auth Abuse Hunting Dashboard" />
+
 ### **Failed Logons - KQL Query**
 ```KQL
 SecurityEvent_CL 
