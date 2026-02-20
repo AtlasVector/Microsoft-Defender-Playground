@@ -52,5 +52,5 @@ Additional attack  was observed against **\admin** (**1,988**), **\administrator
 - Migrate to Kerberos and actively move applications and / or services from NTLM to Kerberos.
 
 ##### **References**
-[**NIST SP 800-53 Rev 5** Control **AC-7**:](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-53r5.pdf#%5B%7B%22num%22%3A190%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C88%2C650%2C0%5D) Unsuccessful Logon Attempts (lockout/throttling concept).
-**[NIST SP 800-63B-4:](https://csrc.nist.gov/pubs/sp/800/63/b/4/final)** Digital Identity Guidelines: Authentication and Authenticator Management
+- [**NIST SP 800-53 Rev 5** Control **AC-7**:](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-53r5.pdf#%5B%7B%22num%22%3A190%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C88%2C650%2C0%5D) Unsuccessful Logon Attempts (lockout/throttling concept).
+- **[NIST SP 800-63B-4:](https://csrc.nist.gov/pubs/sp/800/63/b/4/final)** Digital Identity Guidelines: Authentication and Authenticator Management
