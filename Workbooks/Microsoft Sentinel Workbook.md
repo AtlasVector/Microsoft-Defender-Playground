@@ -14,7 +14,6 @@ It’s designed to answer:
 - Are failures concentrated on specific users, systems, or apps?
 ## **Windows failed logons (4625)**
 This section focuses on high volume failed logons and the biggest targets
-
 ![Windows failed logons](../Resources/Auth-Dash.png)
 
 ### **Failed Logons - KQL Query**
