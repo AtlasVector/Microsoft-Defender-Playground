@@ -14,7 +14,7 @@ It’s designed to answer:
 - Are failures concentrated on specific users, systems, or apps?
 ## **Windows failed logons (4625)**
 This section focuses on high volume failed logons and the biggest targets
-<img src="Resources/Auth-Dash.png" alt="Windows failed logons" />
+<img src="resources/Auth-Dash.png" alt="Windows failed logons" />
 ### **Failed Logons - KQL Query**
 ```KQL
 SecurityEvent_CL 
@@ -26,7 +26,7 @@ SecurityEvent_CL
 
 ### **Parameters**
 While digging into workbook structure, I noticed parameters can do more than just filter charts, so I decided to try them here as a simple highlight to mix dynamic variable with human readable text.
-<img src="Resources/parameters_use.png" alt="Parameters use" />
+<img src="resources/parameters_use.png" alt="Parameters use" />
 #### **Highest Targeted Hosts  & Accounts** 
 
 <img src="Resources/parameter_scr.png" alt="Parameters" />
@@ -56,7 +56,7 @@ SecurityEvent_CL
 ## Entra ID Sign-ins
 The goal is to quickly spot identities under the most sign in pressure, see whether failures are isolated or spread across multiple apps, and understand what’s driving the activity so I can separate expected behavior from suspicious patterns.
 
-<img src="Resources/Signin-LogsV1.png" alt="Signin Logs" />
+<img src="resources/Signin-LogsV1.png" alt="Signin Logs" />
 
 This part of the dashboards includes: 
 - Per user u (failed / success / total) to identify high failure accounts fast.
@@ -93,7 +93,6 @@ Next updates I want to add as the lab and workbook evolve:
 - Correlation panels (`4625` - `4624` “success after failures”, burst patterns)
 - Remote access and spray indicators: RDP-focused failures (LogonType 10) plus source IPs targeting multiple user accounts.
 - Generating more logs and introducing additional operators (like join and union) to correlate multiple tables for improved visibility and richer context.
-
 ### **Resources**
 - [MYDFIR Community ](https://www.mydfir.com/)
 - [Microsoft Certified: Security Operations Analyst Associate](https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/?practice-assessment-type=certification)
