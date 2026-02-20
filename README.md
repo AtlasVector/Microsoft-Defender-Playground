@@ -1,4 +1,3 @@
-README
 # Microsoft-Defender
 A small personal collection of Microsoft Sentinel / Microsoft Defender lab content: workbooks, KQL hunts/queries, and supporting resources.
 ## Contents
