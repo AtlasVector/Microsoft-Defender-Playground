@@ -14,7 +14,9 @@ It’s designed to answer:
 - Are failures concentrated on specific users, systems, or apps?
 ## **Windows failed logons (4625)**
 This section focuses on high volume failed logons and the biggest targets
-<img src="resources/Auth-Dash.png" alt="Windows failed logons" />
+
+![Windows failed logons](../Resources/Auth-Dash.png)
+
 ### **Failed Logons - KQL Query**
 ```KQL
 SecurityEvent_CL 
@@ -29,7 +31,7 @@ While digging into workbook structure, I noticed parameters can do more than jus
 <img src="resources/parameters_use.png" alt="Parameters use" />
 #### **Highest Targeted Hosts  & Accounts** 
 
-<img src="Resources/parameter_scr.png" alt="Parameters" />
+![Parameters](../Resources/parameter_scr.png)
 
 ##### Hosts - `TopComputer`
 ```KQL
@@ -56,7 +58,7 @@ SecurityEvent_CL
 ## Entra ID Sign-ins
 The goal is to quickly spot identities under the most sign in pressure, see whether failures are isolated or spread across multiple apps, and understand what’s driving the activity so I can separate expected behavior from suspicious patterns.
 
-<img src="resources/Signin-LogsV1.png" alt="Signin Logs" />
+![Signin Logs](../Resources/Signin-LogsV1.png)
 
 This part of the dashboards includes: 
 - Per user u (failed / success / total) to identify high failure accounts fast.
