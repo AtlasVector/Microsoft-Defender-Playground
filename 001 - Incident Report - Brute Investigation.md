@@ -22,7 +22,7 @@ Name: YB
 		- `SERVER`
 - All attempts used **NTLM authentication**, which is considered not safe authentication methods
   
-![4625 Activity Logs](resources/4625-Logs.png)
+![4625 Activity Logs](resources/4625-logs.png)
 ## Investigation Summary 
 Over the past 24 hours, Sentinel telemetry from **Windows Security Event ID 4625 (Failed Logon)** shows a high volume authentication failure which might be an indicator for a brute force attempt against privileged  accounts. This attack is focused on two systems **SOC-FW-RDP** and **SHIR-Hive** with the highest target being **SOC-FW-RDP** for the account  **\ADMINISTRATOR** (**9,997** failed attempts). 
 
