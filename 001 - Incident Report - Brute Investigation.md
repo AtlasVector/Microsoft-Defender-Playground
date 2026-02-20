@@ -45,14 +45,14 @@ Additional attack  was observed against **\admin** (**1,988**), **\administrator
   
 - **How:** The high volume of attempts in a very short timeframe suggests the activity was automated, potentially using a script-based NTLM brute-force tool (for example, a Python **[NTLM Brute-Forcer](https://dhimasln.medium.com/ntlm-brute-force-attacks-a-practical-lab-simulation-detection-guide-365f5005dfea)**). The tool would repeatedly submit invalid credentials, generating Event ID 4625 (failed logon) entries and showing NTLM as the authentication package across the observed activity.
 
-### **Recommendations**
-#### Exposure & configuration recommendations
+## **Recommendations**
+### Exposure & configuration recommendations
 - Review the business need for RDP exposure (especially on `SOC-FW-RDP`): 
 	- If required, restrict access (for example allow list, jump host, gateway, VPN), and activity monitoring .
 	- if not required, remove exposure to reduce attack surface.
 - Prioritize privileged account hardening as reduce use of default/admin-equivalent usernames, and ensure privileged accounts use stronger controls.
 - Migrate to Kerberos and actively move applications and / or services from NTLM to Kerberos.
 
-##### **References**
+#### **References**
 - [**NIST SP 800-53 Rev 5** Control **AC-7**:](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-53r5.pdf#%5B%7B%22num%22%3A190%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C88%2C650%2C0%5D) Unsuccessful Logon Attempts (lockout/throttling concept).
 - **[NIST SP 800-63B-4:](https://csrc.nist.gov/pubs/sp/800/63/b/4/final)** Digital Identity Guidelines: Authentication and Authenticator Management
