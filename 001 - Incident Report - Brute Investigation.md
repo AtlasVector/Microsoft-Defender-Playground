@@ -1,13 +1,13 @@
 ## Report Details:
 **Title**: 30 Day MyDFIR Microsoft Challenge  - DAY 7 
-Name: Joe Ben
+**Name**: Joe Ben
 #### MITRE ATT&CK: 
 - **Tactics:** #Credential_Access **ID:** #TA0006
 - **Techniques:** #Brute_Force  **ID:** #T1110 
 #### Report N:  INC-001
 
 ## Findings
-- AlertID: Brute-Force-Alert #001
+- **AlertID**: Brute-Force-Alert #001
 - High volume of Windows **Event ID 4625 (Failed Logon)** detected.
 - Total failed attempts mostly focused on high privileges access account
 	- **Targeted Systems:**
@@ -23,6 +23,8 @@ Name: Joe Ben
 - All attempts used **NTLM authentication**, which is considered not safe authentication methods
   
 ![4625 Activity Logs](resources/4625-logs.png)
+
+
 ## Investigation Summary 
 Over the past 24 hours, Sentinel telemetry from **Windows Security Event ID 4625 (Failed Logon)** shows a high volume authentication failure which might be an indicator for a brute force attempt against privileged  accounts. This attack is focused on two systems **SOC-FW-RDP** and **SHIR-Hive** with the highest target being **SOC-FW-RDP** for the account  **\ADMINISTRATOR** (**9,997** failed attempts). 
 
@@ -52,7 +54,6 @@ Additional attack  was observed against **\admin** (**1,988**), **\administrator
 	- if not required, remove exposure to reduce attack surface.
 - Prioritize privileged account hardening as reduce use of default/admin-equivalent usernames, and ensure privileged accounts use stronger controls.
 - Migrate to Kerberos and actively move applications and / or services from NTLM to Kerberos.
-
 #### **References**
 - [**NIST SP 800-53 Rev 5** Control **AC-7**:](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-53r5.pdf#%5B%7B%22num%22%3A190%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C88%2C650%2C0%5D) Unsuccessful Logon Attempts (lockout/throttling concept).
 - **[NIST SP 800-63B-4:](https://csrc.nist.gov/pubs/sp/800/63/b/4/final)** Digital Identity Guidelines: Authentication and Authenticator Management
